@@ -53,7 +53,7 @@ export default function About() {
         </div>
       </div>
       <span className="text-3xl bottom-0 mb-8 block ml-8">
-        <Link to="/About">⬅ </Link>
+        <Link to="/">⬅ </Link>
       </span>
     </>
   );

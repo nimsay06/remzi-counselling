@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 function Navigation() {
   return (
     <>
-      <nav className="bg-light-green sticky w-screen  p-1">
+      <nav className="bg-light-green sticky w-screen  p-3">
         <ul className="flex justify-end space-x-3">
-          <li className=" gap-x-0 hover:underline ">
+          <li>
             <Link to="/">Home</Link>
           </li>
           <li>

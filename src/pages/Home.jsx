@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <>
       <div className="p-2 text-center relative">
-        <h1 className="text-3xl">Deon Remzi Counselling</h1>
+        <h1 className="text-3xl font-bold">Deon Remzi Counselling</h1>
         <img
           className="relative m-auto rounded-full h-60 w-60 border-8 border-peach-brown shadow-lg
         "

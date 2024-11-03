@@ -1,17 +1,23 @@
 import { Link } from "react-router-dom";
 import Footer from "../Footer";
+
 export default function HomePage() {
   return (
     <>
-      <div className="p-2 text-center relative">
-        <h1 className="text-3xl font-bold">Deon Remzi Counselling</h1>
-        <img
-          className="relative m-auto rounded-full h-60 w-60 border-8 border-peach-brown shadow-lg
-        "
-          src="/src/assets/Deon_Remzi_pfp.jpg"
-        />
-        <div className=" w-8/12 m-auto max-w-85">
-          <h3>About me and my therapy practice</h3>
+      <div
+        className="p-2 border-4 border-black
+       text-dark-green min-h-screen relative"
+      >
+        <div className=" bg-cover h-52 w-full bg-hero-image bg-opacity-20 ">
+          <h1 className="text-3xl text-peach-brown text-center font-bold ">
+            Deon Remzi Counselling
+          </h1>
+        </div>
+
+        <div className=" w-7/12 m-auto ">
+          <h3 className="text-2xl font-bold">
+            About me and my therapy practice
+          </h3>
           <p>
             As a humanistic integrative counsellor, I merge various therapeutic
             modalities to offer you comprehensive and tailored support. My
@@ -24,8 +30,8 @@ export default function HomePage() {
             <Link to="/About">Read more</Link>
           </span>
         </div>
-        <div className="mt-10 w-8/12 m-auto ">
-          <h3>How I can Help</h3>
+        <div className="mt-8 w-7/12 m-auto ">
+          <h3 className="text-2xl font-bold">How I can Help</h3>
           <p>
             Counselling can be a valuable tool for personal growth, offering
             clarity and insight as we navigate life’s challenges. Whether
@@ -40,6 +46,7 @@ export default function HomePage() {
           </span>
         </div>
       </div>
+
       <Footer />
     </>
   );

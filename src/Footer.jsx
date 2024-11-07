@@ -7,7 +7,7 @@ export default function Footer() {
       <p className="font-Cormorant font-extrabold text-xl">
         Deon Remzi Counselling{" "}
       </p>
-      <img src={logo} className="m-auto p-0 h-fit w-12 inline" />
+      <img src={logo} className="m-auto p-0 h-10 w-12 inline" />
       <p className="font-Cormorant font-extrabold h-fit ">
         DeonRemzi@hotmail.com <span className="m-3" />
         +447-854-222-888

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function ContactPage() {
   const [result, setResult] = React.useState("");
@@ -102,9 +101,6 @@ export default function ContactPage() {
           <span>{result}</span>
         </div>
       </div>
-      <span className="text-3xl   ml-8">
-        <Link to="/">⬅ </Link>
-      </span>
     </>
   );
 }

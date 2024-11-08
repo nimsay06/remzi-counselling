@@ -1,10 +1,9 @@
 import logo from "./assets/DR_Logo.png";
-// import { PhoneIcon } from "@heroicons/react/24/outline";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-green m-auto  text-peach-brown bottom-0 h-fit w-full  grid grid-cols-3 grid-flow-row text-wrap ">
-      <p className="font-Cormorant font-extrabold text-xl">
+    <footer className="bg-dark-green m-auto  text-peach-brown bottom-0 w-full  grid grid-cols-3 grid-flow-row text-wrap  ">
+      <p className="font-Cormorant font-extrabold text-xl ml-2">
         Deon Remzi Counselling{" "}
       </p>
       <img src={logo} className="m-auto p-0 h-10 w-12 inline" />

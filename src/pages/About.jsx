@@ -1,6 +1,7 @@
 import couchImg from "../assets/Couch.jpg";
 import mindfulImg from "../assets/skyline.jpg";
 import psychImg from "../assets/abacus.jpg";
+import Footer from "../Footer";
 const images = [
   {
     src: couchImg,
@@ -28,27 +29,30 @@ const images = [
 ];
 export default function MyServices() {
   return (
-    <div className="m-2  w-full">
-      <div className=" flex flex-col md:flex-row gap-4 text-dark-green ">
-        {images.map((image, index) => (
-          <div key={index} className="relative w-full md:w-2/3 h-96 md:h-80">
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover opacity-90 "
-            />
-            <div className="absolute inset-0 text-center  bg-main bg-opacity-70">
-              <h1 className="text-3xl font-Cormorant font-extrabold mt-2">
-                {" "}
-                {image.overlayHeader}
-              </h1>
-              <br />
-              <p className=" text-lg font-SourceSans">{image.overlayText}</p>
+    <>
+      <div className="m-5">
+        <div className=" flex flex-col md:flex-row gap-5 text-dark-green ">
+          {images.map((image, index) => (
+            <div key={index} className="relative w-full md:w-2/3 h-96 md:h-80">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover opacity-90 "
+              />
+              <div className="absolute inset-0 text-center  bg-main bg-opacity-70 ">
+                <h1 className="text-3xl font-Cormorant font-extrabold mt-2 lg:mt-8">
+                  {" "}
+                  {image.overlayHeader}
+                </h1>
+                <br />
+                <p className=" text-lg font-SourceSans">{image.overlayText}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

@@ -3,7 +3,7 @@ import logo from "./assets/DR_Logo.png";
 
 function Navigation() {
   return (
-    <nav className="shadow-inner border border-peach-brown bg-peach-brown bg-opacity-10 flex justify-evenly items-end flex-wrap w-full p-4 text-dark-green font-bold font-Cormorant text-xl ">
+    <nav className="shadow-inner border  border-peach-brown bg-peach-brown bg-opacity-20 flex justify-evenly items-end flex-wrap w-full p-4 text-dark-green font-bold font-Cormorant text-xl ">
       <Link to="/">
         <img
           src={logo}

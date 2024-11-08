@@ -1,5 +1,5 @@
 import React from "react";
-
+import Footer from "../Footer";
 export default function ContactPage() {
   const [result, setResult] = React.useState("");
 
@@ -28,12 +28,12 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="m-auto mt-3 grid grid-cols-2 grid-rows-3  min-h-screen items-center md:grid-cols-1 md:grid-rows-2 text-balance text-dark-green">
-        <div className="col-span-1 row-span-2 lg:w-1/2 lg:mb-0 w-8/12 md:row-start-1 md:row-end-1 m-auto">
-          <h1 className="text-4xl font-extrabold mb-4 font-Playfair">
+      <div className="m-auto  p-4 text-balance text-dark-green h-screen overflow-scroll">
+        <div className=" w-8/12  m-auto mt-8">
+          <h1 className="text-4xl font-extrabold mb-4 font-Playfair ">
             Contact Me
           </h1>
-          <p className="text-lg font-SourceSans">
+          <p className="text-lg font-SourceSans ">
             As part of this process, I offer a free 20-minute consultation to
             ensure that we are a good fit and to discuss your goals in a way
             that feels comfortable and supportive. This initial conversation
@@ -42,13 +42,13 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className=" mr-10 col-start-2 col-end-4 row-start-1 row-end-3 lg:w-1/2  rounded-3xl  p-12 shadow-2xl shadow-peach-brown/40  bg-sage md:row-start-2 md:row-end-3 md:col-span-1 m-auto">
+        <div className=" mt-12 w-9/12 p-4 h-fit lg:w-1/4 md:1/4 rounded-3xl bg-sage bg-opacity-80 m-auto">
           <form
             onSubmit={onSubmit}
-            className="bg-sage w-fit flex flex-col space-y-4 m-auto"
+            className=" lg:w-2/3 xl:w-2/3 flex flex-col space-y-4 m-auto"
           >
             <label className="font-semibold text-3xl font-Playfair">
-              Full Name
+              Full Name <p className="text-lg text-red">(required)</p>
             </label>
             <input
               placeholder="Enter your full name"
@@ -59,7 +59,7 @@ export default function ContactPage() {
             />
             <br />
             <label className="font-semibold text-3xl font-Playfair">
-              Email
+              Email<p className="text-lg text-red">(required)</p>
             </label>
             <input
               placeholder="Enter your email address"
@@ -71,6 +71,7 @@ export default function ContactPage() {
             <br />
             <label className="font-semibold text-3xl font-Playfair">
               What brings you to counselling?
+              <p className="text-lg text-red">(required)</p>
             </label>
             <textarea
               name="subject"
@@ -81,6 +82,7 @@ export default function ContactPage() {
             <br />
             <label className="font-semibold text-3xl font-Playfair">
               What are you hoping to achieve?
+              <p className="text-lg text-red">(required)</p>
             </label>
             <textarea
               name="message"
@@ -93,7 +95,7 @@ export default function ContactPage() {
 
             <button
               type="submit"
-              className="rounded-2xl text-xl bg-light-green bg-opacity-90 focus:bg-peach-brown hover:bg-peach-brown hover:bg-opacity-25 hover:underline font-bold"
+              className="rounded-2xl text-2xl font-Cormorant bg-light-green bg-opacity-90 focus:bg-peach-brown hover:bg-peach-brown hover:bg-opacity-25 hover:underline font-bold"
             >
               Submit Form
             </button>
@@ -101,6 +103,7 @@ export default function ContactPage() {
           <span>{result}</span>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

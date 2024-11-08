@@ -4,7 +4,7 @@ import MyServices from "./pages/About";
 import HomePage from "./pages/Home";
 import Navigation from "./Nav";
 import FAQ from "./pages/FAQ";
-import Footer from "./Footer";
+
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/Contact" element={<ContactPage />} />
         </Routes>
       </main>
-      <Footer />
+
     </div>
   );
 }

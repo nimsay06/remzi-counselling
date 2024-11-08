@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import HeroImage from "../assets/treeMain.jpg";
-
+import Footer from "../Footer";
 export default function HomePage() {
   return (
     <>
@@ -10,12 +10,12 @@ export default function HomePage() {
       >
         <div className="relative min-w-full ">
           <img
-            className="h-2/3 w-full object-cover rounded-md opacity-70 hue-rotate-50"
+            className="h-2/3 xl:1/3 w-full object-cover rounded-md opacity-60 hue-rotate-50"
             src={HeroImage}
             alt="Random image"
           />
           <div className=" m-auto absolute inset-0 flex items-center justify-center ">
-            <h2 className="text-dark-green text-6xl sm:text-3xl font-extrabold font-Cormorant  rounded-3xl">
+            <h2 className="text-dark-green text-8xl xl:text-8xl sm:text-3xl font-extrabold font-Cormorant  rounded-3xl">
               Deon Remzi Counselling
             </h2>
           </div>
@@ -70,6 +70,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

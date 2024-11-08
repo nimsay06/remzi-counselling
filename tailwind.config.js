@@ -16,6 +16,7 @@ export default {
       lightCyan: "#CDEDF6",
       slate: "#707070",
       orangePeach: "#FFD9B3",
+      red: "#FF6666",
     },
     screens: {
       mobile: "",

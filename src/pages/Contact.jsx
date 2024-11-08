@@ -28,7 +28,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="m-auto  p-4 text-balance text-dark-green h-screen overflow-scroll">
+      <div className="m-auto  p-4 text-balance text-dark-green h-screen overflow-auto">
         <div className=" w-8/12  m-auto mt-8">
           <h1 className="text-4xl font-extrabold mb-4 font-Playfair ">
             Contact Me

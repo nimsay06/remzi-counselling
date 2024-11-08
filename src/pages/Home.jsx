@@ -15,7 +15,7 @@ export default function HomePage() {
             alt="Random image"
           />
           <div className=" m-auto absolute inset-0 flex items-center justify-center ">
-            <h2 className="text-dark-green text-8xl xl:text-8xl sm:text-3xl font-extrabold font-Cormorant  rounded-3xl">
+            <h2 className="text-dark-green text-4xl xl:text-8xl sm:text-3xl font-extrabold font-Cormorant  rounded-3xl">
               Deon Remzi Counselling
             </h2>
           </div>

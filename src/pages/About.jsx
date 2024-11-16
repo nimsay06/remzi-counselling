@@ -1,57 +1,58 @@
 import couchImg from "../assets/Couch.jpg";
 import mindfulImg from "../assets/skyline.jpg";
-import psychImg from "../assets/abacus.jpg";
-import Footer from "../Footer";
+import brainImg from "../assets/brain_unsplash.jpg";
+
 const images = [
   {
     src: couchImg,
     alt: "Description 1",
-    overlayHeader: "Humanist Approach",
-    overlayText:
-      "I emphasise the importance of our therapeutic relationship and your self-exploration. I believe in your innate drive for personal growth and self-actualization. My role is to provide a nurturing, non-judgmental environment where you feel safe to explore your thoughts and emotions. This approach empowers you to recognize your strengths, deepen self-understanding, and cultivate self-compassion. It enhances your sense of autonomy and personal responsibility, helping you make meaningful choices aligned with your values.",
+    header: "Humanistic Therapy",
+    text: "I emphasise the importance of our therapeutic relationship and your self-exploration. I believe in your innate drive for personal growth and self-actualization. My role is to provide a nurturing, non-judgmental environment where you feel safe to explore your thoughts and emotions. This approach empowers you to recognize your strengths, deepen self-understanding, and cultivate self-compassion. It enhances your sense of autonomy and personal responsibility, helping you make meaningful choices aligned with your values.",
+    quote:
+      "“The curious paradox is that when I accept myself just as I am, then I can change”-Carl Rogers",
   },
   {
-    src: psychImg,
+    src: brainImg,
     alt: "Description 2",
-    overlayHeader: "Psychodyanmic Approach",
-
-    overlayText:
-      "I explore both unconscious and conscious aspects of your childhood experiences, uncovering underlying patterns and core beliefs that may be contributing to your current struggles. By understanding how early experiences shape present-day behaviours and relationships, you can break free from maladaptive patterns and foster emotional resilience. This insight helps you make more intentional decisions, leading to greater emotional freedom and well-being.",
+    header: "Psychodynamic Therapy",
+    text: "I explore both unconscious and conscious aspects of your childhood experiences, uncovering underlying patterns and core beliefs that may be contributing to your current struggles. By understanding how early experiences shape present-day behaviours and relationships, you can break free from maladaptive patterns and foster emotional resilience. This insight helps you make more intentional decisions, leading to greater emotional freedom and well-being.",
+    quote: "“Who looks outside, dreams; who looks inside, awakes.” – Carl Jung",
   },
   {
     src: mindfulImg,
     alt: "Description 3",
-    overlayHeader: "CBT, Mindfulness and Breathwork",
+    header: "CBT techniques, mindfulness, and breathwork practices",
 
-    overlayText:
-      "These techniques help you identify and challenge negative patterns of thought and behaviour, promoting healthier coping mechanisms. Mindfulness and breathwork enhance self-awareness, emotional regulation, and stress reduction, fostering calm and clarity during challenging moments. Together, these approaches provide holistic support as you navigate life’s challenges and pursue personal growth.",
+    text: "Enables you to identify and challenge negative patterns of thoughts, feelings, and behaviours. This can prove empowering and help you to cultivate healthier coping mechanisms and achieve your goals. This can also promote self-awareness, emotional regulation, and living in the present moment, enriching your overall well-being. Controlled breathing exercises can reduce stress, increase emotional clarity, and promote relaxation, helping you manage emotions and find calm during challenging moments.",
+    quote:
+      "“One of the greatest discoveries a person makes, one of their great surprises, is to find they can do what they were afraid they couldn't do” - Dr. Aaron T. Beck",
   },
 ];
 export default function MyServices() {
   return (
     <>
-      <div className="m-5 overflow-auto">
+      <div className="m-5 overflow-auto min-h-screen">
         <div className=" flex flex-col md:flex-row gap-16 text-dark-green ">
           {images.map((image, index) => (
-            <div key={index} className="relative w-full md:w-2/3 h-96 md:h-80">
+            <div key={index} className="relative w-full md:w-2/3 h-96">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover opacity-90 "
+                className="w-full h-full object-cover  "
               />
-              <div className="absolute inset-0 text-center  bg-main bg-opacity-70 xl:w-1/3">
+              <div className="absolute inset-0 text-center  text-main xl:w-1/3">
                 <h1 className="text-3xl font-Cormorant font-extrabold mt-2 lg:mt-8">
                   {" "}
-                  {image.overlayHeader}
+                  {image.header}
                 </h1>
                 <br />
-                <p className=" text-lg font-SourceSans">{image.overlayText}</p>
+                <p className=" text-lg font-SourceSans">{image.text}</p>
+                <p className="italic text-dark-green">{image.quote}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

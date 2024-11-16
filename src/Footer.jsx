@@ -7,9 +7,9 @@ export default function Footer() {
         Deon Remzi Counselling{" "}
       </p>
       <img src={logo} className="m-auto p-0 h-10 w-12 inline" />
-      <p className="font-Cormorant font-extrabold h-fit ">
+      <p className="font-Cormorant font-extrabold h-fit text-pretty ">
         DeonRemzi@hotmail.com <span className="m-3" />
-        +447-854-222-888
+        07470 356685
       </p>
     </footer>
   );

@@ -18,22 +18,33 @@ export default {
       orangePeach: "#FFD9B3",
       red: "#FF6666",
     },
-    screens: {
-      screens: {
-        sm: { min: "640px", max: "767px" },
-        md: { min: "768px", max: "1023px" },
-        lg: { min: "1024px", max: "1279px" },
-        xl: { min: "1280px" },
-      },
-    },
+
     fontFamily: {
       SourceSans: ["Source Sans 3", "serif"],
       Playfair: ["Playfair", "serif"],
       Cormorant: ["Cormorant Garamond", "serif"],
     },
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
+      circle: "circle",
+    },
     extend: {
       backgroundImage: {
         "hero-image": "url('/src/assets/sun_shining_through_trees.avif')",
+        humanisticImage: "url('/src/assets/Couch.jpg')",
+      },
+      screens: {
+        screens: {
+          xs: { min: "10px", max: "320px" },
+          sm: { min: "321px", max: "768px" },
+          md: { min: "769px", max: "1025px" },
+          lg: { min: "1026px", max: "1279px" },
+          xl: { min: "1280px" },
+        },
       },
     },
   },

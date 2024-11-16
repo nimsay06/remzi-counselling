@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Footer";
+
 export default function ContactPage() {
   const [result, setResult] = React.useState("");
 
@@ -28,7 +28,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="m-auto  p-4 text-balance text-dark-green h-screen overflow-auto">
+      <div className="m-auto  p-4 text-balance text-dark-green min-h-screen ">
         <div className=" w-8/12  m-auto mt-8">
           <h1 className="text-4xl font-extrabold mb-4 font-Playfair ">
             Contact Me
@@ -42,41 +42,41 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className=" mt-12 w-9/12 p-4 h-fit lg:w-1/4 md:1/4 rounded-3xl bg-sage bg-opacity-80 m-auto">
+        <div className=" mt-12 w-9/12 p-4 h-fit lg:w-3/4  rounded-3xl bg-sage bg-opacity-80 m-auto">
           <form
             onSubmit={onSubmit}
             className=" lg:w-2/3 xl:w-2/3 flex flex-col space-y-4 m-auto"
           >
             <label className="font-semibold text-3xl font-Playfair">
-              Full Name <p className="text-lg text-red">(required)</p>
+              Full Name <p className="text-lg italic text-red">(required)</p>
             </label>
             <input
               placeholder="Enter your full name"
               type="text"
               name="name"
               required
-              className=" border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2  focus:outline-none focus:ring-2 focus:ring-peach-brown h-fit"
+              className=" border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2 bg-main    focus:outline-none focus:ring-2 focus:ring-peach-brown h-fit"
             />
             <br />
             <label className="font-semibold text-3xl font-Playfair">
-              Email<p className="text-lg text-red">(required)</p>
+              Email<p className="text-lg italic text-red">(required)</p>
             </label>
             <input
               placeholder="Enter your email address"
               type="email"
               name="email"
               required
-              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2  focus:outline-none focus:ring-2 focus:ring-peach-brown h-fit"
+              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2  bg-main  focus:outline-none focus:ring-2 focus:ring-peach-brown h-fit"
             />
             <br />
             <label className="font-semibold text-3xl font-Playfair">
               What brings you to counselling?
-              <p className="text-lg text-red">(required)</p>
+              <p className="text-lg italic text-red">(required)</p>
             </label>
             <textarea
               name="subject"
               required
-              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2  focus:outline-none focus:ring-2 focus:ring-peach-brown h-36"
+              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2 bg-main  focus:outline-none focus:ring-2 focus:ring-peach-brown h-36"
               placeholder="Write response here..."
             ></textarea>
             <br />
@@ -88,14 +88,14 @@ export default function ContactPage() {
               name="message"
               placeholder="Write response here..."
               required
-              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2  focus:outline-none focus:ring-2 focus:ring-peach-brown h-36
+              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2 bg-main   focus:outline-none focus:ring-2 focus:ring-peach-brown h-36
             "
             ></textarea>
             <br />
 
             <button
               type="submit"
-              className="rounded-2xl text-2xl font-Cormorant bg-light-green bg-opacity-90 focus:bg-peach-brown hover:bg-peach-brown hover:bg-opacity-25 hover:underline font-bold"
+              className="rounded-2xl text-2xl font-Cormorant bg-peach-brown bg-opacity-80 focus:bg-peach-brown  hover:underline  hover:text-light-green font-bold"
             >
               Submit Form
             </button>
@@ -103,7 +103,6 @@ export default function ContactPage() {
           <span>{result}</span>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

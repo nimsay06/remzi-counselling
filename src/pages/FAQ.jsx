@@ -3,48 +3,55 @@
 export default function FAQ() {
   return (
     <>
-      <div className="min-h-screen overflow-auto p-6 text-dark-green m-8 xl:text-lg lg:m-auto md:m-16 lg:w-2/3 ">
+      <div className="min-h-screen overflow-auto p-6 text-dark-green m-8 md:m-auto xl:text-lg md:w-2/3">
         <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl ">
           Who do I work with?
         </h1>
-        <p className="mb-5">I work with adults and older adults.</p>
+        <p className="mb-5">My focus is on giving counselling to adults and older adults.</p>
         <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl">
           What therapies do I offer?
         </h1>
         <p className="mb-5">
           I can provide you with:
-          <li>One To One Counselling</li>
-          <li>Couples Counselling</li>
-          <li>Solution Focused Counselling</li>
-          <li>Time Limited Counselling</li>
-          <li>Long Term Counselling</li>
-          <li>Multiculturalism & Inclusion</li>
+          <ul className="list-circle ml-8">
+            <li>One To One Counselling</li>
+            <li>Couples Counselling</li>
+            <li>Solution Focused Counselling</li>
+            <li>Time Limited Counselling</li>
+            <li>Long Term Counselling</li>
+            <li>Multiculturalism & Inclusion</li>
+          </ul>
         </p>
         <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl">
           What issues do I work with?
         </h1>
         <p className="mb-5">
-          <li>Abuse</li>
-          <li>Anger Issues</li>
-          <li>Anxiety</li>
-          <li>Bereavement</li>
-          <li>Depression</li>
-          <li>Family Breakdown</li>
-          <li>Family Issues</li>
-          <li>General Anxiety Disorder</li>
-          <li>Loss</li>
-          <li>Relationship Issues</li>
-          <li>Sexual Abuse</li>
-          <li>Stress</li>
-          <li>Survivors of Domestic Abuse</li>
-          <li>Trauma</li>
+          <ul className="list-circle ml-8">
+            {" "}
+            <li>Abuse</li>
+            <li>Anger Issues</li>
+            <li>Anxiety</li>
+            <li>Bereavement</li>
+            <li>Depression</li>
+            <li>Family Breakdown</li>
+            <li>Family Issues</li>
+            <li>General Anxiety Disorder</li>
+            <li>Loss</li>
+            <li>Relationship Issues</li>
+            <li>Sexual Abuse</li>
+            <li>Stress</li>
+            <li>Survivors of Domestic Abuse</li>
+            <li>Trauma</li>
+          </ul>
         </p>
         <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl">
           Fee Structure
         </h1>
         <p className="mb-5">
-          <li>Individual one-to-one 50-minute sessions: £65.00</li>
-          <li>Couples Counselling 60-minute sessions £95.00</li>
+          <ul className="list-circle ml-8">
+            <li>Individual one-to-one 50-minute sessions: £65.00</li>
+            <li>Couples Counselling 60-minute sessions £95.00</li>
+          </ul>
         </p>
         <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl">
           {" "}
@@ -62,7 +69,6 @@ export default function FAQ() {
           overall well-being.
         </p>
       </div>
-      
     </>
   );
 }

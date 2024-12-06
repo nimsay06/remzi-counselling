@@ -1,122 +1,51 @@
-import couchImg from "../assets/Couch.jpg";
-import mindfulImg from "../assets/skyline.jpg";
-import brainImg from "../assets/brain_unsplash.jpg";
-import { useState } from "react";
+export default function Testimonials() {
+  const clientQuotes = [
+    "Deon is a natural listener, but more than that. She is so good at offering positive ways forward that are achievable too",
 
-const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+    "Honestly, I didn't think therapy could help me. I've been dealing with anxiety and depression for years and nothing seemed to work. But Deon totally changed my perspective , she’s super understanding and actually gives you tools that work in real life not just in the sessions. I've made more progress in a few months with her than I did in years of trying to figure it out on my own. I'm finally starting to feel like myself again",
 
-  const slides = [
-    {
-      src: couchImg,
-      alt: "Description 1",
-      header: "Humanistic Therapy",
-      text: "I emphasise the importance of our therapeutic relationship and your self-exploration. I believe in your innate drive for personal growth and self-actualization. My role is to provide a nurturing, non-judgmental environment where you feel safe to explore your thoughts and emotions. This approach empowers you to recognize your strengths, deepen self-understanding, and cultivate self-compassion. It enhances your sense of autonomy and personal responsibility, helping you make meaningful choices aligned with your values.",
-      quote:
-        "“The curious paradox is that when I accept myself just as I am, then I can change”-Carl Rogers",
-    },
-    {
-      src: brainImg,
-      alt: "Description 2",
-      header: "Psychodynamic Therapy",
-      text: "I explore both unconscious and conscious aspects of your childhood experiences, uncovering underlying patterns and core beliefs that may be contributing to your current struggles. By understanding how early experiences shape present-day behaviours and relationships, you can break free from maladaptive patterns and foster emotional resilience. This insight helps you make more intentional decisions, leading to greater emotional freedom and well-being.",
-      quote:
-        "“Who looks outside, dreams; who looks inside, awakes.” – Carl Jung",
-    },
-    {
-      src: mindfulImg,
-      alt: "Description 3",
-      header: "CBT techniques, mindfulness, and breathwork practices",
+    "Just being able to voice my concerns and worries has been really helpful. Feeling validated as a person. Deon is very patient and understanding",
 
-      text: "Enables you to identify and challenge negative patterns of thoughts, feelings, and behaviours. This can prove empowering and help you to cultivate healthier coping mechanisms and achieve your goals. This can also promote self-awareness, emotional regulation, and living in the present moment, enriching your overall well-being. Controlled breathing exercises can reduce stress, increase emotional clarity, and promote relaxation, helping you manage emotions and find calm during challenging moments.",
-      quote:
-        "“One of the greatest discoveries a person makes, one of their great surprises, is to find they can do what they were afraid they couldn't do” - Dr. Aaron T. Beck",
-    },
+    "My spouse and I reached out to Deon when we were struggling in our marriage. Years of unresolved, issues had left us distant, frustrated and unsure if we could find our way back to each other. Deon was instrumental in helping us rebuild our communication and trust. She created a neutral safe space where both of us felt heard and understood guiding us through difficult conversations with wisdom and empathy. We are in a much healthier happier place now",
+
+    "Deon really listened to me and seem to understand, I didn't feel judged by her. Her attitude towards me was warm and friendly. She helped me to explore my difficulties and to understand myself better. She was also very respectful towards me",
+
+    "The whole experience was helpful. Deon was so patient and she listened. I thought she was so supportive. She was able to pick up on the main points at the end of each session. There is a definite positive change in me from before the counselling to now, I can now see myself how I was before the incident",
+
+    "When I started working with Deon, I wasn't sure if anyone could help me heal from the trauma I had experienced. I had carried it for so long and it felt like part of me, but with Deon's gentle guidance I found the courage to confront my pass in a safe supportive space. It wasn't easy, but I now feel lighter freer and more in control of my own life. Deon helped me understand that healing is a journey and I am so grateful to have her by my side on this path",
+
+    "Deon helped me come to terms with what happened. Having counselling has made me realise it was not my fault and start living my life again",
+
+    "I have worked hard and due to a good counsellor/client working relationship have achieved much in terms of my self-awareness and in being more comfortable with my life. Thank you for working with me",
+
+    "After getting out of an abusive relationship I was really lost. I didn't trust anyone and I didn't know how to even begin to heal. Deon made me feel safe from the moment we started. She listened without judgement and slowly helped me piece together my sense of self. I felt broken when I started but now, I feel like I am finally becoming whole again. She really understood what I needed, and I can't thank her enough for helping me find my way back to myself",
+    "I cannot thank Deon enough for the incredible support I received during my therapy sessions. Over the past few weeks, Deon has truly opened my mind and helped me gain a clearer perspective on my thoughts and emotions.",
+    "Through our sessions, I’ve learned valuable tools and strategies that have significantly reduced my anxiety and allowed me to approach life with a much calmer and more positive mindset. I now feel ready to move forward and put everything I’ve learned into practice.",
+    "If you’re looking for a counselor who is compassionate, insightful, and genuinely committed to helping you find clarity, I wholeheartedly recommend Deon. Their impact on my life has been truly transformative.",
   ];
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   return (
-    <div className="relative w-full max-w-3xl mt-16 mx-auto min-h-screen">
-      <div className="overflow-hidden bg-peach-brown bg-opacity-15 shadow-2xl">
-        <div
-          className="flex transition-transform duration-1000 "
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {slides.map((slide, index) => (
-            <div key={index} className="flex-shrink-0 w-full text-dark-green ">
-              <img
-                src={slide.src}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-72 object-cover"
-              />
-              <div className="m-auto text-balance">
-                <h1 className="text-center font-Cormorant font-black text-3xl mt-8">
-                  {slide.header}
-                </h1>
-                <p className="text-center  md:text-xl font-SourceSans mt-4 mx-auto w-3/4">
-                  {slide.text}
-                </p>
-                <p className="text-center md:text-lg italic font-SourceSans mt-2 mb-6">
-                  {slide.quote}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+    <>
+      <div className="text-xl text-dark-green mx-auto mt-8  text-pretty overflow-auto w-2/3">
+        <h1 className="font-Cormorant font-black text-3xl ">
+          Testimonials from my clients
+        </h1>
+        <p>
+          If you’re still unsure how therapy can make a difference, hear from
+          those who have been there.
+          <br /> My clients’ testimonials offer real insights into the healing
+          and growth they’ve experienced, with the help of my services.
+        </p>
       </div>
-
-      {/* Buttons */}
-      <button
-        onClick={handlePrev}
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 bg-parchment bg-opacity-20 rounded-full hover:shadow-md text-dark-green hover:text-peach-brown"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={2.5}
-          stroke="currentColor"
-          className="size-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-          />
-        </svg>
-      </button>
-      <button
-        onClick={handleNext}
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 bg-parchment bg-opacity-20 rounded-full hover:shadow-md text-dark-green hover:text-peach-brown"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={2.5}
-          stroke="currentColor"
-          className="size-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-          />
-        </svg>
-      </button>
-    </div>
+      <div className=" mt-8  md:p-8 w-full md:grid md:grid-cols-2 text-dark-green md:gap-12 text-lg italic text-center">
+        {clientQuotes.map((quote, index) => (
+          <p key={index} className="  text-dark-green p-5 text-center">
+            &quot;{quote}&quot;
+          </p>
+        ))}
+      </div>
+      <div className="bg-peach-brown w-1/3 m-auto text-center mb-12 text-2xl font-SourceSans italic font-bold">
+        <p> &quot;Thank you, Deon, for everything.&quot;</p>
+      </div>
+    </>
   );
-};
-
-export default Testimonials;
+}

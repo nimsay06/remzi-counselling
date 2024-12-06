@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import HeroImage from "../assets/treeMain.jpg";
+import bacpReg from "../assets/reg.png";
 import profileImg from "../assets/Deon_Remzi_pfp.jpg";
+import leaves from "../assets/leaves-svgrepo-com.png";
+import chatBubbles from "../assets/chat-bubble-svgrepo-com.png";
+import puzzlePieces from "../assets/puzzle-svgrepo-com.png";
 
 export default function HomePage() {
   return (
@@ -19,114 +23,147 @@ export default function HomePage() {
             <h2 className="text-dark-green text-4xl xl:text-6xl lg:text-5xl md:text-5xl font-extrabold font-Cormorant">
               Deon Remzi Counselling
             </h2>
-            <p className="font-Playfair font-bold text-3xl text-main">
-              Humanistic Integrative Counsellor
-            </p>
-            <p className="font-Playfair font-semibold italic text-3xl text-main">
-              Working Remotely
-            </p>
+            <h2 className="text-center hidden md:block font-Playfair italic text-2xl md:text-4xl md:m-auto">
+              “I do my best because I’m counting on you counting on me.” <br />-
+              Maya Angelou{" "}
+            </h2>
           </div>
         </div>
-        <div className="textContainer w-3/4 p-2  text-dark-green m-auto ">
-          <h2 className="text-center text-balance font-Playfair italic text-4xl m-auto mt-12">
+        <div className="mainTextContainer  w-full mt-4 p-4 border-2 text-dark-green md:m-auto ">
+          <h2 className="text-center mt-8  md:hidden font-Playfair italic text-3xl md:text-4xl md:m-auto">
             “I do my best because I’m counting on you counting on me.” <br />-
             Maya Angelou{" "}
           </h2>
-          <div className=" w-8/12 m-auto h-2/3 mt-24 text-dark-green ">
-            <div className="aboutSection m-auto">
+          <div className=" w-full  h-2/3 mt-20 text-dark-green ">
+            <div className="aboutSection bg-peach-brown bg-opacity-40 rounded-md md:w-2/3 m-auto pb-6">
               <h2 className="text-4xl font-bold font-Playfair m-auto text-center mb-4">
                 About me and my counselling practice
               </h2>
               <img
                 src={profileImg}
-                className="h-2/3 w-2/3 md:h-1/3 md:w-1/3 border-4 m-auto "
+                className="md:h-1/3 md:w-1/3 w-2/3 h-2/5 border-2 m-auto "
               />
-              <p className="font-SourceSans mt-6">
-                As a Humanistic integrative counsellor, I merge various
-                humanistic and psychodynamic therapeutic modalities to offer
-                comprehensive support. My practice is built on a foundation of
-                compassion, believing in the inherent capacity for growth and
-                healing within you. Cultural awareness is central to my
-                practice. I deeply value and honour your diverse background,
-                experiences and identities. By embracing your cultural
-                differences, I ensure that my therapeutic approach is inclusive
-                and responsive to your unique individual needs, creating a space
-                where you feel respected, understood and heard.
+              <p className="font-SourceSans p-4 md:text-lg  mt-6">
+                As a <b>Humanistic integrative counsellor</b>, I merge various
+                <b> humanistic</b> and <b>psychodynamic</b> therapeutic
+                modalities to offer comprehensive support. My practice is built
+                on a foundation of
+                <b> compassion</b>, believing in the inherent capacity for
+                <b> growth </b>and <b>healing</b> within you.{" "}
+                <b>Cultural awareness</b> is central to my practice. I deeply
+                <b> value</b> and <b>honour</b> your <b>diverse background</b>,
+                <b> experiences</b> and <b>identities</b>. By embracing your
+                cultural differences, I ensure that my therapeutic approach is{" "}
+                <b>inclusive and responsive</b> to your
+                <b> unique individual needs</b>, creating a space where you feel{" "}
+                <b>respected, understood</b> and <b>heard</b>.
               </p>
             </div>
+            <div className="textLinkSection md:mt-8 md:grid md:grid-cols-2 md:grid-rows-3 lg:w-2/3 md:m-auto border-2 border-peach-brown">
+              <div className="approachSection md:col-span-1 p-2  ">
+                <p className="m-auto pt-4">
+                  I am a member of the{" "}
+                  <b>
+                    British Association for Counselling and Psychotherapy (BACP)
+                  </b>
+                  , as such I adhere to their Ethical Framework. I offer both{" "}
+                  <b>long </b>
+                  &amp; <b>short-term</b> therapy. As I <b>work remotely</b> I
+                  can provide counselling to anyone across the UK. <br />I
+                  specialise in:
+                  <ul className="list-circle ml-6">
+                    <li>Anxiety</li>
+                    <li>Depression</li>
+                    <li>Stress</li>
+                    <li>Low Self Esteem</li>
+                    <li>Couples Counselling</li>
+                    <li>Relationship Issues</li>
+                    <li>Family Conflict</li>
+                    <li>Early Years Parenting</li>
+                    <li>Bereavement</li>
+                  </ul>
+                  Find out more about my counselling approaches{" "}
+                  <Link
+                    to="/MyApproach"
+                    className="italic hover:underline hover:text-peach-brown font-semibold"
+                  >
+                    here
+                  </Link>
+                </p>
+              </div>
+              <div className="bg-peach-brown bg-opacity-40 hidden md:block ">
+                <img src={puzzlePieces} />
+              </div>
 
-            <br />
-            <p>
-              I am a member of the British Association for Counselling and
-              Psychotherapy (BACP), as such I adhere to their Ethical Framework.
-              I offer both long &amp; short-term therapy. <br />
-              Specialising in:
-              <ul className="list-circle ml-6">
-                <li>Anxiety</li>
-                <li>Depression</li>
-                <li>Stress</li>
-                <li>Low Self Esteem</li>
-                <li>Couples Counselling</li>
-                <li>Relationship Issues</li>
-                <li>Family Conflict</li>
-                <li>Early Years Parenting</li>
-                <li>Bereavement</li>
-              </ul>
-              Find out more about my counselling approaches{" "}
-              <Link
-                to="/MyApproach"
-                className="italic hover:underline hover:text-peach-brown font-semibold"
-              >
-                {" "}
-                here
-              </Link>
-            </p>
+              <div className="faqSection md:col-start-2 md:row-start-2 md:p-8 m-auto">
+                <h3 className="text-3xl font-bold font-Playfair ">
+                  Why Counselling?
+                </h3>
+                <p>
+                  Counselling can be a valuable tool for <b>personal growth</b>,
+                  offering <b>clarity</b> and <b>insight</b> as we navigate
+                  life’s challenges. Whether you&apos;re seeking support for{" "}
+                  <b>
+                    anxiety, depression, relationship issues, life transitions,
+                    trauma, loss
+                  </b>
+                  and more, therapy provides a <b>safe space</b> for{" "}
+                  <b>self-exploration</b> and <b>healing</b>. Together, we will
+                  work to <b>unlock your potential</b>, helping you gain a{" "}
+                  <b>deeper understanding</b> of yourself and move towards a
+                  more <b>fulfilling life</b>.
+                </p>
+                <p>
+                  {" "}
+                  <Link
+                    to="/FAQs"
+                    className="italic font-semibold hover:underline hover:text-peach-brown"
+                  >
+                    Read more
+                  </Link>
+                </p>
+              </div>
+              <div className="bg-peach-brown bg-opacity-40 hidden md:block">
+                <img src={leaves} />
+              </div>
+
+              <div className="contactSection md:col-start-1 md:row-start-3 md:text-end md:pr-2 m-auto">
+                <h3 className="text-3xl font-bold font-Playfair md:mt-2 md:text-center">
+                  {" "}
+                  Free Consultation
+                </h3>
+                <p className="md:mt-4">
+                  As part of this process, I offer a{" "}
+                  <b>free 20-minute consultation</b> to ensure that we are a
+                  good fit and to discuss your <b>goals</b> in a way that feels{" "}
+                  <b>comfortable and supportive</b>. This initial conversation
+                  allows us to explore how counselling can meet your needs and
+                  what you hope to gain from the experience.
+                </p>
+                <p>
+                  If you&apos;re interested in working with me, contact me{" "}
+                  <Link
+                    to="/Contact"
+                    className="italic hover:underline font-semibold hover:text-peach-brown"
+                  >
+                    here
+                  </Link>
+                </p>
+              </div>
+              <div className="bg-peach-brown bg-opacity-40 hidden md:block">
+                <img
+                  src={chatBubbles}
+                  className="h-2/3 m-auto mt-12
+              "
+                />
+              </div>
+            </div>
           </div>
-          <div className=" w-8/12 h-1/3 mt-2 m-auto ">
-            <h3 className="text-3xl font-bold font-Playfair">
-              Why Counselling?
-            </h3>
-            <p>
-              Counselling can be a valuable tool for personal growth, offering
-              clarity and insight as we navigate life’s challenges. Whether
-              you&apos;re seeking support for anxiety, depression, relationship
-              issues, life transitions, trauma, loss and more, therapy provides
-              a safe space for self-exploration and healing. Together, we will
-              work to unlock your potential, helping you gain a deeper
-              understanding of yourself and move towards a more fulfilling life.
-            </p>
-            <p>
-              {" "}
-              <Link
-                to="/FAQs"
-                className="italic font-semibold hover:underline hover:text-peach-brown"
-              >
-                Read more
-              </Link>
-            </p>
-          </div>
-          <div className=" w-8/12 h-1/3 m-auto mb-4">
-            <h3 className="text-3xl font-bold font-Playfair">
-              {" "}
-              Free Consultation
-            </h3>
-            <p>
-              As part of this process, I offer a free 20-minute consultation to
-              ensure that we are a good fit and to discuss your goals in a way
-              that feels comfortable and supportive. This initial conversation
-              allows us to explore how counselling can meet your needs and what
-              you hope to gain from the experience.
-            </p>
-            <p>
-              If you&apos;re interested in working with me, contact me{" "}
-              <Link
-                to="/Contact"
-                className="italic hover:underline font-semibold hover:text-peach-brown"
-              >
-                here
-              </Link>
-            </p>
-          </div>
+        </div>
+        <div className="logoSection grid grid-cols-2">
+          <img src={bacpReg} className=" h-2/3" />
+          <img src={bacpReg} className="h-2/3" />
+          <img src={bacpReg} className="h-2/3" />
         </div>
       </div>
     </>

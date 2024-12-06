@@ -28,76 +28,79 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="m-auto  p-4 text-balance text-dark-green min-h-screen ">
-        <div className=" w-8/12  m-auto mt-8">
+      <div className="m-0 md:m-auto p-4 text-balance text-dark-green min-h-screen ">
+        <div className=" w-8/12 m-auto mt-8">
           <h1 className="text-4xl font-extrabold mb-4 font-Playfair ">
             Contact Me
           </h1>
           <p className="text-lg font-SourceSans ">
-            As part of this process, I offer a free 20-minute consultation to
-            ensure that we are a good fit and to discuss your goals in a way
-            that feels comfortable and supportive. This initial conversation
-            allows us to explore how counselling can meet your needs and what
-            you hope to gain from the experience.
+            As part of this process, I offer a{" "}
+            <b>free 20-minute consultation</b> to ensure that we are a good fit
+            and to discuss your goals in a way that feels <b>comfortable</b> and
+            <b> supportive</b>. This initial conversation allows us to{" "}
+            <b>explore how counselling can meet your needs</b> and what you hope
+            to gain from the experience.
           </p>
         </div>
 
-        <div className=" mt-12 w-9/12 p-4 h-fit lg:w-3/4  rounded-3xl bg-sage bg-opacity-80 m-auto">
+        <div className=" mt-12 md:w-9/12 p-4 h-fit lg:w-3/4  shadow-inner rounded-3xl bg-sage bg-opacity-50 m-auto">
           <form
             onSubmit={onSubmit}
             className=" lg:w-2/3 xl:w-2/3 flex flex-col space-y-4 m-auto"
           >
             <label className="font-semibold text-3xl font-Playfair">
-              Full Name <p className="text-lg italic text-red">(required)</p>
+              Full Name
             </label>
+            <p className=" italic text-sm text-red">(required)</p>
             <input
               placeholder="Enter your full name"
               type="text"
               name="name"
               required
-              className=" border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2 bg-main    focus:outline-none focus:ring-2 focus:ring-peach-brown h-fit"
+              className=" border-2 border-solid border-sage bg-white rounded-2xl w-full p-2 bg-main    focus:outline-none focus:ring-4 focus:ring-sage h-fit"
             />
             <br />
             <label className="font-semibold text-3xl font-Playfair">
-              Email<p className="text-lg italic text-red">(required)</p>
+              Email
             </label>
+            <p className=" italic text-sm text-red">(required)</p>
             <input
               placeholder="Enter your email address"
               type="email"
               name="email"
               required
-              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2  bg-main  focus:outline-none focus:ring-2 focus:ring-peach-brown h-fit"
+              className="border-2 border-solid border-sage  bg-white rounded-2xl w-full p-2  bg-main  focus:outline-none focus:ring-4 focus:ring-sage h-fit"
             />
             <br />
             <label className="font-semibold text-3xl font-Playfair">
               What brings you to counselling?
-              <p className="text-lg italic text-red">(required)</p>
             </label>
+            <p className=" text-sm italic text-red">(required)</p>
             <textarea
               name="subject"
               required
-              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2 bg-main  focus:outline-none focus:ring-2 focus:ring-peach-brown h-36"
+              className="border-2 border-solid border-sage  bg-white rounded-2xl w-full p-2 bg-main  focus:outline-none focus:ring-4 focus:ring-sage h-36"
               placeholder="Write response here..."
             ></textarea>
             <br />
             <label className="font-semibold text-3xl font-Playfair">
               What are you hoping to achieve?
-              <p className="text-lg text-red">(required)</p>
             </label>
+            <p className="text-sm italic text-red">(required)</p>
+
             <textarea
               name="message"
               placeholder="Write response here..."
               required
-              className="border-3 border-solid border-peach-brown bg-white rounded-2xl w-full p-2 bg-main   focus:outline-none focus:ring-2 focus:ring-peach-brown h-36
+              className="border-2 border-solid border-sage  bg-white rounded-2xl w-full p-2 bg-main   focus:outline-none focus:ring-4 focus:ring-sage h-36
             "
             ></textarea>
             <br />
-
             <button
               type="submit"
-              className="rounded-2xl text-2xl font-Cormorant bg-peach-brown bg-opacity-80 focus:bg-peach-brown  hover:underline  hover:text-light-green font-bold"
+              className="rounded-2xl text-2xl font-SourceSans bg-peach-brown bg-opacity-80 focus:bg-peach-brown  hover:font-black hover:text-light-green font-medium"
             >
-              Submit Form
+              Send
             </button>
           </form>
           <span>{result}</span>

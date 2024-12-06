@@ -56,19 +56,19 @@ function Navigation() {
           isOpen ? "flex" : "hidden"
         }`}
       >
-        <Link to="/" className="mr-4">
+        <Link to="/" className="mr-8">
           Home
         </Link>
-        <Link to="/MyApproach" className="mr-4">
+        <Link to="/MyApproach" className="mr-8">
           My Approach
         </Link>
-        <Link to="/Testimonials" className="mr-4">
+        <Link to="/Testimonials" className="mr-8">
           Testimonials
         </Link>
-        <Link to="/FAQs" className="mr-4">
+        <Link to="/FAQs" className="mr-8">
           FAQs
         </Link>
-        <Link to="Contact" className="mr-4">
+        <Link to="Contact" className="mr-8">
           Contact Me
         </Link>
       </div>

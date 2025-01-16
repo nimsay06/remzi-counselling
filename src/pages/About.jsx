@@ -1,6 +1,7 @@
 import couchImg from "../assets/Couch.jpg";
 import mindfulImg from "../assets/skyline.jpg";
-import brainImg from "../assets/brain_unsplash.jpg";
+import handsImg from "../assets/handstogether.jpg";
+
 import { useState } from "react";
 
 const About = () => {
@@ -8,16 +9,16 @@ const About = () => {
 
   const slides = [
     {
-      src: couchImg,
-      alt: "Description 1",
+      src: handsImg,
+      alt: "Hands together in a supportive gesture",
       header: "Humanistic Therapy",
       text: "I emphasise the importance of our therapeutic relationship and your self-exploration. I believe in your innate drive for personal growth and self-actualization. My role is to provide a nurturing, non-judgmental environment where you feel safe to explore your thoughts and emotions. This approach empowers you to recognize your strengths, deepen self-understanding, and cultivate self-compassion. It enhances your sense of autonomy and personal responsibility, helping you make meaningful choices aligned with your values.",
       quote:
         "“The curious paradox is that when I accept myself just as I am, then I can change”-Carl Rogers",
     },
     {
-      src: brainImg,
-      alt: "Description 2",
+      src: couchImg,
+      alt: "Image of a therapy room with a couch",
       header: "Psychodynamic Therapy",
       text: "I explore both unconscious and conscious aspects of your childhood experiences, uncovering underlying patterns and core beliefs that may be contributing to your current struggles. By understanding how early experiences shape present-day behaviours and relationships, you can break free from maladaptive patterns and foster emotional resilience. This insight helps you make more intentional decisions, leading to greater emotional freedom and well-being.",
       quote:
@@ -25,7 +26,7 @@ const About = () => {
     },
     {
       src: mindfulImg,
-      alt: "Description 3",
+      alt: "Image of a sunset on the beach",
       header: "CBT techniques, mindfulness, and breathwork practices",
 
       text: "Enables you to identify and challenge negative patterns of thoughts, feelings, and behaviours. This can prove empowering and help you to cultivate healthier coping mechanisms and achieve your goals. This can also promote self-awareness, emotional regulation, and living in the present moment, enriching your overall well-being. Controlled breathing exercises can reduce stress, increase emotional clarity, and promote relaxation, helping you manage emotions and find calm during challenging moments.",
@@ -47,8 +48,8 @@ const About = () => {
   };
 
   return (
-    <div className="relative w-full max-w-3xl mt-16 mx-auto mb-4 min-h-screen">
-      <div className="overflow-auto bg-peach-brown bg-opacity-15 md:shadow-2xl">
+    <div className="relative w-full max-w-3xl mt-16 mx-auto mb-4 min-h-screen overflow-hidden">
+      <div className=" bg-peach-brown  bg-opacity-15 md:shadow-2xl">
         <div
           className="flex transition-transform duration-1000 "
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -56,22 +57,25 @@ const About = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full text-dark-green p-4 "
+              className="flex-shrink-0 w-full text-dark-green  p-4 "
             >
-              <div className="imageContainer">
+              <div className="imageContainer flex">
                 {" "}
-                <p className="text-main absolute m-20 md:m-28 text-center w-3/4 text-pretty font-semibold md:text-xl italic ">
+                <p
+                  className="text-main m-10 text-lg absolute text-center md:m-20 md:justify-center 
+                 md:text-center w-3/4 text-pretty font-semibold md:text-xl italic "
+                >
                   {slide.quote}
                 </p>
                 <img
                   src={slide.src}
-                  alt={`Slide ${index + 1}`}
-                  className="w-full h-72 object-cover "
+                  alt={slide.alt}
+                  className="w-full  h-64 md:h-72 object-cover "
                 />{" "}
               </div>
 
               <div className="m-auto text-balance">
-                <h1 className="text-center font-Cormorant font-black text-3xl mt-8">
+                <h1 className="text-center font-Taviraj text-3xl mt-8">
                   {slide.header}
                 </h1>
                 <p className="text-center md:pb-5 md:text-lg font-SourceSans mt-4 mx-auto w-3/4">

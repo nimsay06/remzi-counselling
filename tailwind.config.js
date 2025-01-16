@@ -23,6 +23,7 @@ export default {
       SourceSans: ["Source Sans 3", "serif"],
       Playfair: ["Playfair", "serif"],
       Cormorant: ["Cormorant Garamond", "serif"],
+      Taviraj: ["Taviraj", "serif"],
     },
     listStyleType: {
       none: "none",

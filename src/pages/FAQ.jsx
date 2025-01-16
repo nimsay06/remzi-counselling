@@ -4,11 +4,13 @@ export default function FAQ() {
   return (
     <>
       <div className="min-h-screen overflow-auto p-6 text-dark-green m-8 md:m-auto xl:text-lg md:w-2/3">
-        <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl ">
+        <h1 className="font-Taviraj font-medium text-3xl xl:text-4xl md:mt-8 ">
           Who do I work with?
         </h1>
-        <p className="mb-5">My focus is on giving counselling to adults and older adults.</p>
-        <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl">
+        <p className="mb-5">
+          My focus is on giving counselling to adults and older adults.
+        </p>
+        <h1 className="font-Taviraj font-medium  text-3xl xl:text-4xl">
           What therapies do I offer?
         </h1>
         <p className="mb-5">
@@ -22,12 +24,11 @@ export default function FAQ() {
             <li>Multiculturalism & Inclusion</li>
           </ul>
         </p>
-        <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl">
+        <h1 className="font-Taviraj font-medium  text-3xl xl:text-4xl">
           What issues do I work with?
         </h1>
         <p className="mb-5">
-          <ul className="list-circle ml-8">
-            {" "}
+          <ul className="list-circle ml-8 ">
             <li>Abuse</li>
             <li>Anger Issues</li>
             <li>Anxiety</li>
@@ -44,7 +45,7 @@ export default function FAQ() {
             <li>Trauma</li>
           </ul>
         </p>
-        <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl">
+        <h1 className="font-Taviraj font-medium  text-3xl xl:text-4xl">
           Fee Structure
         </h1>
         <p className="mb-5">
@@ -53,7 +54,7 @@ export default function FAQ() {
             <li>Couples Counselling 60-minute sessions £95.00</li>
           </ul>
         </p>
-        <h1 className="font-Cormorant font-extrabold text-3xl xl:text-4xl">
+        <h1 className="font-Taviraj font-medium  text-3xl xl:text-4xl">
           {" "}
           What can I expect in my first session?
         </h1>

@@ -29,37 +29,41 @@ export default function HomePage() {
             </h2>
           </div>
         </div>
-        <div className="mainTextContainer  w-full mt-4 p-4 border-2 text-dark-green md:m-auto ">
+        <div className="mainTextContainer  w-full mt-4 p-4  text-dark-green md:m-auto ">
           <h2 className="text-center mt-8  md:hidden font-Playfair italic text-3xl md:text-4xl md:m-auto">
             “I do my best because I’m counting on you counting on me.” <br />-
             Maya Angelou{" "}
           </h2>
           <div className=" w-full  h-2/3 mt-20 text-dark-green ">
-            <div className="aboutSection bg-peach-brown bg-opacity-40 rounded-md md:w-2/3 m-auto pb-6">
-              <h2 className="text-4xl font-bold font-Playfair m-auto text-center mb-4">
+            <div className="aboutSection bg-peach-brown bg-opacity-40 rounded-md  md:w-2/3 m-auto pb-6">
+              <h2 className="text-4xl font-bold font-Playfair m-auto pt-4 text-center mb-4">
                 About me and my counselling practice
               </h2>
-              <img
-                src={profileImg}
-                className="md:h-1/3 md:w-1/3 w-2/3 h-2/5 border-2 m-auto "
-              />
-              <p className="font-SourceSans p-4 md:text-lg  mt-6">
-                As a <b>Humanistic integrative counsellor</b>, I merge various
-                <b> humanistic</b> and <b>psychodynamic</b> therapeutic
-                modalities to offer comprehensive support. My practice is built
-                on a foundation of
-                <b> compassion</b>, believing in the inherent capacity for
-                <b> growth </b>and <b>healing</b> within you.{" "}
-                <b>Cultural awareness</b> is central to my practice. I deeply
-                <b> value</b> and <b>honour</b> your <b>diverse background</b>,
-                <b> experiences</b> and <b>identities</b>. By embracing your
-                cultural differences, I ensure that my therapeutic approach is{" "}
-                <b>inclusive and responsive</b> to your
-                <b> unique individual needs</b>, creating a space where you feel{" "}
-                <b>respected, understood</b> and <b>heard</b>.
-              </p>
+              <div className="md:grid md:grid-cols-2">
+                {" "}
+                <img
+                  src={profileImg}
+                  className=" md:col-span-1 m-auto md:w-10/12 w-3/4"
+                />
+                <p className="font-SourceSans md:col-start-2 p-4 md:text-lg mt-6">
+                  As a <b>fully qualified Humanistic integrative counsellor</b>,
+                  I merge various
+                  <b> humanistic</b> and <b>psychodynamic</b> therapeutic
+                  modalities to offer comprehensive support. My practice is
+                  built on a foundation of
+                  <b> compassion</b>, believing in the inherent capacity for
+                  <b> growth </b>and <b>healing</b> within you.{" "}
+                  <b>Cultural awareness</b> is central to my practice. I deeply
+                  <b> value</b> and <b>honour</b> your <b>diverse background</b>
+                  ,<b> experiences</b> and <b>identities</b>. By embracing your
+                  cultural differences, I ensure that my therapeutic approach is{" "}
+                  <b>inclusive and responsive</b> to your
+                  <b> unique individual needs</b>, creating a space where you
+                  feel <b>respected, understood</b> and <b>heard</b>.
+                </p>
+              </div>
             </div>
-            <div className="textLinkSection md:mt-8 md:grid md:grid-cols-2 md:grid-rows-3 lg:w-2/3 md:m-auto border-2 border-peach-brown">
+            <div className="textLinkSection md:mt-8 md:grid md:grid-cols-2 md:grid-rows-3 lg:w-2/3 md:m-auto md:border-2 md:border-peach-brown">
               <div className="approachSection md:col-span-1 p-2  ">
                 <p className="m-auto pt-4">
                   I am a member of the{" "}
@@ -82,12 +86,11 @@ export default function HomePage() {
                     <li>Early Years Parenting</li>
                     <li>Bereavement</li>
                   </ul>
-                  Find out more about my counselling approaches{" "}
                   <Link
                     to="/MyApproach"
                     className="italic hover:underline hover:text-peach-brown font-semibold"
                   >
-                    here
+                    Find out more about my counselling approaches here
                   </Link>
                 </p>
               </div>
@@ -96,7 +99,7 @@ export default function HomePage() {
               </div>
 
               <div className="faqSection md:col-start-2 md:row-start-2 md:p-8 m-auto">
-                <h3 className="text-3xl font-bold font-Playfair ">
+                <h3 className="text-3xl mt-6  font-Taviraj ">
                   Why Counselling?
                 </h3>
                 <p>
@@ -106,7 +109,7 @@ export default function HomePage() {
                   <b>
                     anxiety, depression, relationship issues, life transitions,
                     trauma, loss
-                  </b>
+                  </b>{" "}
                   and more, therapy provides a <b>safe space</b> for{" "}
                   <b>self-exploration</b> and <b>healing</b>. Together, we will
                   work to <b>unlock your potential</b>, helping you gain a{" "}
@@ -117,9 +120,10 @@ export default function HomePage() {
                   {" "}
                   <Link
                     to="/FAQs"
-                    className="italic font-semibold hover:underline hover:text-peach-brown"
+                    className="italic  font-semibold hover:underline hover:text-peach-brown "
                   >
-                    Read more
+                    Have any other questions about my counselling services? Find
+                    answers here
                   </Link>
                 </p>
               </div>
@@ -128,7 +132,7 @@ export default function HomePage() {
               </div>
 
               <div className="contactSection md:col-start-1 md:row-start-3 md:text-end md:pr-2 m-auto">
-                <h3 className="text-3xl font-bold font-Playfair md:mt-2 md:text-center">
+                <h3 className="text-3xl mt-6 font-Taviraj md:mt-2 md:text-center">
                   {" "}
                   Free Consultation
                 </h3>
@@ -160,10 +164,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="logoSection grid grid-cols-2">
-          <img src={bacpReg} className=" h-2/3" />
-          <img src={bacpReg} className="h-2/3" />
-          <img src={bacpReg} className="h-2/3" />
+        <div className="logoSection p-2 grid grid-cols-3 gap-4">
+          <img src={bacpReg} className="h-12 m-auto " />
+          <img src={bacpReg} className="h-12 m-auto " />
+          <img src={bacpReg} className="h-12 m-auto " />
         </div>
       </div>
     </>

@@ -8,8 +8,8 @@ function Navigation() {
   };
 
   return (
-    <nav className=" bg-peach-brown bg-opacity-50 flex  flex-wrap w-full  text-dark-green font-Cormorant ">
-      <p className=" inline mr-auto p-0 text-lg font-black">
+    <nav className=" bg-peach-brown bg-opacity-50 flex  flex-wrap w-full  text-dark-green font-Taviraj ">
+      <p className=" inline mr-auto p-0 text-lg font-semibold">
         Deon Remzi Counselling <br />
         Humanistic Integrative Counsellor
       </p>
@@ -52,23 +52,38 @@ function Navigation() {
       </button>
 
       <div
-        className={` text-xl pb-2 flex justify-between items-end flex-col font-black md:flex-row md:flex md:items-end w-full md:w-auto  md:text-2xl ${
+        className={` text-xl pb-2 flex justify-between items-end flex-col mt-2  md:flex-row md:flex md:items-end w-full md:w-auto  md:text-2xl ${
           isOpen ? "flex" : "hidden"
         }`}
       >
-        <Link to="/" className="mr-8">
+        <Link
+          to="/"
+          className="mr-8 px-1 rounded-xl hover:text-main hover:duration-75"
+        >
           Home
         </Link>
-        <Link to="/MyApproach" className="mr-8">
+        <Link
+          to="/MyApproach"
+          className="mr-8 px-1 rounded-xl hover:text-main hover:duration-75"
+        >
           My Approach
         </Link>
-        <Link to="/Testimonials" className="mr-8">
+        <Link
+          to="/Testimonials"
+          className="mr-8 px-1 rounded-xl hover:text-main hover:duration-75"
+        >
           Testimonials
         </Link>
-        <Link to="/FAQs" className="mr-8">
+        <Link
+          to="/FAQs"
+          className="mr-8 px-1 rounded-xl hover:text-main hover:duration-75"
+        >
           FAQs
         </Link>
-        <Link to="Contact" className="mr-8">
+        <Link
+          to="Contact"
+          className="mr-8  px-1 rounded-xl  hover:text-main hover:duration-75"
+        >
           Contact Me
         </Link>
       </div>

@@ -35,7 +35,7 @@ export default function Testimonials() {
           If you’re still unsure how therapy can make a difference, hear from
           those who have been there.
           <br /> My clients’ testimonials offer real insights into the healing
-          and growth they’ve experienced, with the help of my services.
+          and growth they have experienced, with the help of my services.
         </p>
       </div>
       <div className=" mt-8 text-dark-green text-md italic text-center w-full md:grid md:grid-cols-3 ">
@@ -75,9 +75,6 @@ export default function Testimonials() {
             </p>
           ))}
         </div>
-      </div>
-      <div className="bg-peach-brown bg-opacity-70 rounded-lg p-2 w-2/3 md:w-1/3 m-auto text-center mt-6 mb-12 text-2xl font-SourceSans italic font-bold">
-        <p> &quot;Thank you, Deon, for everything.&quot;</p>
       </div>
     </>
   );

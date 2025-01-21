@@ -24,6 +24,8 @@ export default {
       Playfair: ["Playfair", "serif"],
       Cormorant: ["Cormorant Garamond", "serif"],
       Taviraj: ["Taviraj", "serif"],
+      Abel: ["Abel", "serif"],
+      Montserrat: ["Montserrat", "serif"],
     },
     listStyleType: {
       none: "none",

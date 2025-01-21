@@ -29,7 +29,7 @@ export default function ContactPage() {
   return (
     <>
       <div className="m-0 md:m-auto p-4 text-balance text-dark-green min-h-screen ">
-        <div className=" w-8/12 m-auto mt-8">
+        <div className=" md:w-8/12 m-auto mt-8">
           <h1 className="text-4xl  mb-4 font-Taviraj ">Contact Me</h1>
           <p className="text-lg font-SourceSans ">
             As part of this process, I offer a{" "}
@@ -94,7 +94,7 @@ export default function ContactPage() {
             <br />
             <button
               type="submit"
-              className="rounded-2xl text-3xl  bg-peach-brown bg-opacity-80 focus:bg-peach-brown  hover:font-bold hover:text-main "
+              className="rounded-xl text-2xl w-fit p-2 m-auto bg-light-green bg-opacity-60  hover:text-main "
             >
               Send
             </button>

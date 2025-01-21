@@ -8,8 +8,8 @@ function Navigation() {
   };
 
   return (
-    <nav className=" bg-peach-brown bg-opacity-50 flex  flex-wrap w-full  text-dark-green font-Taviraj ">
-      <p className=" inline mr-auto p-0 text-lg font-semibold">
+    <nav className=" bg-peach-brown bg-opacity-50 flex  flex-wrap w-full  text-dark-green font-Abel ">
+      <p className=" inline mr-auto p-0 text-xl font-semibold">
         Deon Remzi Counselling <br />
         Humanistic Integrative Counsellor
       </p>
@@ -52,7 +52,7 @@ function Navigation() {
       </button>
 
       <div
-        className={` text-xl pb-2 flex justify-between items-end flex-col mt-2  md:flex-row md:flex md:items-end w-full md:w-auto  md:text-2xl ${
+        className={` text-xl pb-2 flex justify-between items-end flex-col mt-2  md:flex-row md:flex md:items-end w-full md:w-auto  md:text-xl ${
           isOpen ? "flex" : "hidden"
         }`}
       >

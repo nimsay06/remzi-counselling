@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import HeroImage from "../assets/treeMain.jpg";
-import bacpReg from "../assets/reg.png";
+import bacpReg from "../assets/BACP.png";
+import BAANTReg from "../assets/BAANT-Member-logo.jpg";
+import MHFAReg from "../assets/Mental_Health_First_Aider_badge_colour.png";
 import profileImg from "../assets/Deon_Remzi_pfp.jpg";
-import leaves from "../assets/leaves-svgrepo-com.png";
-import chatBubbles from "../assets/chat-bubble-svgrepo-com.png";
-import puzzlePieces from "../assets/puzzle-svgrepo-com.png";
 
 export default function HomePage() {
   return (
@@ -15,27 +14,20 @@ export default function HomePage() {
       >
         <div className="relative w-full ">
           <img
-            className=" w-full object-cover opacity-80 hue-rotate-50 md:max-h-[600px] max-h-1/3 xs:h-[500px]"
+            className=" w-full object-cover opacity-80 hue-rotate-50 min-h-screen md:h-auto"
             src={HeroImage}
             alt="Image of light shining through trees in a forest"
           />
           <div className=" m-auto  absolute flex flex-col inset-0 text-center w-2/3 h-1/4  ">
-            <h2 className="text-dark-green text-4xl xl:text-6xl lg:text-5xl md:text-5xl font-extrabold font-Cormorant">
-              Deon Remzi Counselling
-            </h2>
-            <h2 className="text-center hidden md:block font-Playfair italic text-2xl md:text-4xl md:m-auto">
+            <h2 className="text-center text-dark-green md:text-main md:block font-Montserrat  text-3xl md:text-5xl md:m-auto">
               “I do my best because I’m counting on you counting on me.” <br />-
               Maya Angelou{" "}
             </h2>
           </div>
         </div>
         <div className="mainTextContainer  w-full mt-4 p-4  text-dark-green md:m-auto ">
-          <h2 className="text-center mt-8  md:hidden font-Playfair italic text-3xl md:text-4xl md:m-auto">
-            “I do my best because I’m counting on you counting on me.” <br />-
-            Maya Angelou{" "}
-          </h2>
           <div className=" w-full  h-2/3 mt-20 text-dark-green ">
-            <div className="aboutSection bg-peach-brown bg-opacity-40 rounded-md  md:w-2/3 m-auto pb-6">
+            <div className="aboutSection bg-peach-brown bg-opacity-30 rounded-md  md:w-2/3 m-auto pb-6">
               <h2 className="text-4xl font-bold font-Playfair m-auto pt-4 text-center mb-4">
                 About me and my counselling practice
               </h2>
@@ -45,10 +37,10 @@ export default function HomePage() {
                   src={profileImg}
                   className=" md:col-span-1 m-auto md:w-10/12 w-3/4"
                 />
-                <p className="font-SourceSans md:col-start-2 p-4 md:text-lg mt-6">
+                <p className="font-SourceSans md:col-start-2 p-4  mt-6">
                   As a <b>fully qualified Humanistic integrative counsellor</b>,
                   I merge various
-                  <b> humanistic</b> and <b>psychodynamic</b> therapeutic
+                  <b> Humanistic</b> and <b>Psychodynamic</b> therapeutic
                   modalities to offer comprehensive support. My practice is
                   built on a foundation of
                   <b> compassion</b>, believing in the inherent capacity for
@@ -63,8 +55,8 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="textLinkSection md:mt-8 md:grid md:grid-cols-2 md:grid-rows-3 lg:w-2/3 md:m-auto md:border-2 md:border-peach-brown">
-              <div className="approachSection md:col-span-1 p-2  ">
+            <div className="textLinkSection  lg:w-2/3 m-auto md:border-peach-brown">
+              <div className="approachSection p-2  ">
                 <p className="m-auto pt-4">
                   I am a member of the{" "}
                   <b>
@@ -73,9 +65,9 @@ export default function HomePage() {
                   , as such I adhere to their Ethical Framework. I offer both{" "}
                   <b>long </b>
                   &amp; <b>short-term</b> therapy. As I <b>work remotely</b> I
-                  can provide counselling to anyone across the UK. <br />I
-                  specialise in:
-                  <ul className="list-circle ml-6">
+                  can provide counselling <b>globally</b>. <br />I specialise
+                  in:
+                  <ul className="list-none ">
                     <li>Anxiety</li>
                     <li>Depression</li>
                     <li>Stress</li>
@@ -86,26 +78,27 @@ export default function HomePage() {
                     <li>Early Years Parenting</li>
                     <li>Bereavement</li>
                   </ul>
-                  <Link
-                    to="/MyApproach"
-                    className="italic hover:underline hover:text-peach-brown font-semibold"
-                  >
-                    Find out more about my counselling approaches here
-                  </Link>
+                  <p className="italic font-semibold">
+                    Find out more about my counselling approaches{" "}
+                    <Link
+                      to="/MyApproach"
+                      className="italic underline hover:text-peach-brown font-semibold"
+                    >
+                      here
+                    </Link>
+                  </p>
                 </p>
               </div>
-              <div className="bg-peach-brown bg-opacity-40 hidden md:block ">
-                <img src={puzzlePieces} />
-              </div>
+              <div className="bg-peach-brown bg-opacity-40 hidden md:block "></div>
 
-              <div className="faqSection md:col-start-2 md:row-start-2 md:p-8 m-auto">
+              <div className="faqSection">
                 <h3 className="text-3xl mt-6  font-Taviraj ">
                   Why Counselling?
                 </h3>
                 <p>
                   Counselling can be a valuable tool for <b>personal growth</b>,
                   offering <b>clarity</b> and <b>insight</b> as we navigate
-                  life’s challenges. Whether you&apos;re seeking support for{" "}
+                  life’s challenges. Whether you are seeking support for{" "}
                   <b>
                     anxiety, depression, relationship issues, life transitions,
                     trauma, loss
@@ -116,27 +109,22 @@ export default function HomePage() {
                   <b>deeper understanding</b> of yourself and move towards a
                   more <b>fulfilling life</b>.
                 </p>
-                <p>
-                  {" "}
-                  <Link
-                    to="/FAQs"
-                    className="italic  font-semibold hover:underline hover:text-peach-brown "
-                  >
-                    Have any other questions about my counselling services? Find
-                    answers here
+                <p className="italic  font-semibold">
+                  Have any other questions about my counselling services? Find
+                  answers{" "}
+                  <Link to="/FAQs" className="  hover:text-peach-brown ">
+                    <span className="underline">here</span>
                   </Link>
                 </p>
               </div>
-              <div className="bg-peach-brown bg-opacity-40 hidden md:block">
-                <img src={leaves} />
-              </div>
+              <div className="bg-peach-brown bg-opacity-40 hidden md:block"></div>
 
-              <div className="contactSection md:col-start-1 md:row-start-3 md:text-end md:pr-2 m-auto">
-                <h3 className="text-3xl mt-6 font-Taviraj md:mt-2 md:text-center">
+              <div className="contactSection m-auto">
+                <h3 className="text-3xl mt-6 font-Taviraj md:mt-4">
                   {" "}
                   Free Consultation
                 </h3>
-                <p className="md:mt-4">
+                <p >
                   As part of this process, I offer a{" "}
                   <b>free 20-minute consultation</b> to ensure that we are a
                   good fit and to discuss your <b>goals</b> in a way that feels{" "}
@@ -144,30 +132,23 @@ export default function HomePage() {
                   allows us to explore how counselling can meet your needs and
                   what you hope to gain from the experience.
                 </p>
-                <p>
+                <p className="font-semibold italic">
                   If you&apos;re interested in working with me, contact me{" "}
                   <Link
                     to="/Contact"
-                    className="italic hover:underline font-semibold hover:text-peach-brown"
+                    className="italic underline font-semibold hover:text-peach-brown"
                   >
                     here
                   </Link>
                 </p>
               </div>
-              <div className="bg-peach-brown bg-opacity-40 hidden md:block">
-                <img
-                  src={chatBubbles}
-                  className="h-2/3 m-auto mt-12
-              "
-                />
-              </div>
             </div>
           </div>
         </div>
         <div className="logoSection p-2 grid grid-cols-3 gap-4">
-          <img src={bacpReg} className="h-12 m-auto " />
-          <img src={bacpReg} className="h-12 m-auto " />
-          <img src={bacpReg} className="h-12 m-auto " />
+          <img src={bacpReg} className=" md:w-1/3 m-auto " />
+          <img src={MHFAReg} className=" h-14 md:h-auto md:w-1/6 m-auto " />
+          <img src={BAANTReg} className=" md:w-1/3 m-auto " />
         </div>
       </div>
     </>

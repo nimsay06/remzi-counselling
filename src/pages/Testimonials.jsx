@@ -32,7 +32,7 @@ export default function Testimonials() {
           Testimonials from my clients
         </h1>
         <p className="mt-8">
-          If you’re still unsure how therapy can make a difference, hear from
+          If you are still unsure how therapy can make a difference, hear from
           those who have been there.
           <br /> My clients’ testimonials offer real insights into the healing
           and growth they have experienced, with the help of my services.
@@ -43,11 +43,11 @@ export default function Testimonials() {
           {clientQuotes1.map((quote, index) => (
             <p
               key={index}
-              className=" border-2 p-4 mb-0 mt-4 rounded-lg h-fit bg-sage bg-opacity-20 "
+              className=" border-2 p-4 mb-0 mt-4 text-lg rounded-lg h-fit bg-peach-brown bg-opacity-20 "
             >
-              <b className="text-xl">&quot;</b>
+              &quot;
               {quote}
-              <b className="text-xl">&quot;</b>
+              &quot;
             </p>
           ))}
         </div>
@@ -55,11 +55,11 @@ export default function Testimonials() {
           {clientQuotes2.map((quote, index) => (
             <p
               key={index}
-              className="border-2 p-4  mb-0 mt-4 rounded-lg bg-sage bg-opacity-20 "
+              className="border-2 p-4 text-lg mb-0 mt-4 rounded-lg bg-peach-brown bg-opacity-20 "
             >
-              <b className="text-xl">&quot;</b>
+              &quot;
               {quote}
-              <b className="text-xl">&quot;</b>
+              &quot;
             </p>
           ))}
         </div>{" "}
@@ -67,11 +67,11 @@ export default function Testimonials() {
           {clientQuotes3.map((quote, index) => (
             <p
               key={index}
-              className="border-2 p-4 mt-4 rounded-lg bg-sage bg-opacity-20 "
+              className="border-2 p-4 mt-4 text-lg rounded-lg bg-peach-brown bg-opacity-20 "
             >
-              <b className="text-xl">&quot;</b>
+              &quot;
               {quote}
-              <b className="text-xl">&quot;</b>
+              &quot;
             </p>
           ))}
         </div>

@@ -14,12 +14,12 @@ export default function HomePage() {
       >
         <div className="relative w-full ">
           <img
-            className=" w-full object-cover opacity-80 hue-rotate-50 min-h-screen md:h-auto"
+            className=" w-full object-cover opacity-80 hue-rotate-50 h-80"
             src={HeroImage}
             alt="Image of light shining through trees in a forest"
           />
-          <div className=" m-auto  absolute flex flex-col inset-0 text-center w-2/3 h-1/4  ">
-            <h2 className="text-center text-dark-green md:text-main md:block font-Montserrat  text-3xl md:text-5xl md:m-auto">
+          <div className=" md:m-auto  absolute flex flex-col inset-0 text-center w-2/3 h-1/4 mx-auto  my-48 ">
+            <h2 className="text-center font-semibold text-dark-green md:text-main font-Playfair  text-4xl md:text-5xl md:m-auto">
               “I do my best because I’m counting on you counting on me.” <br />-
               Maya Angelou{" "}
             </h2>
@@ -28,7 +28,7 @@ export default function HomePage() {
         <div className="mainTextContainer  w-full mt-4 p-4  text-dark-green md:m-auto ">
           <div className=" w-full  h-2/3 mt-20 text-dark-green ">
             <div className="aboutSection bg-peach-brown bg-opacity-30 rounded-md  md:w-2/3 m-auto pb-6">
-              <h2 className="text-4xl font-bold font-Playfair m-auto pt-4 text-center mb-4">
+              <h2 className="text-4xl  font-Taviraj m-auto pt-4 text-center mb-4">
                 About me and my counselling practice
               </h2>
               <div className="md:grid md:grid-cols-2">
@@ -65,20 +65,23 @@ export default function HomePage() {
                   , as such I adhere to their Ethical Framework. I offer both{" "}
                   <b>long </b>
                   &amp; <b>short-term</b> therapy. As I <b>work remotely</b> I
-                  can provide counselling <b>globally</b>. <br />I specialise
-                  in:
-                  <ul className="list-none ">
-                    <li>Anxiety</li>
-                    <li>Depression</li>
-                    <li>Stress</li>
-                    <li>Low Self Esteem</li>
-                    <li>Couples Counselling</li>
-                    <li>Relationship Issues</li>
-                    <li>Family Conflict</li>
-                    <li>Early Years Parenting</li>
-                    <li>Bereavement</li>
-                  </ul>
-                  <p className="italic font-semibold">
+                  can provide counselling <b>globally</b>. <br />
+                  <p className="text-center">
+                    I specialise in:
+                    <ul className="list-none ">
+                      <li>Anxiety</li>
+                      <li>Depression</li>
+                      <li>Stress</li>
+                      <li>Trauma</li>
+                      <li>Low Self Esteem</li>
+                      <li>Couples Counselling</li>
+                      <li>Relationship Issues</li>
+                      <li>Family Conflict</li>
+                      <li>Early Years Parenting</li>
+                      <li>Bereavement</li>
+                    </ul>
+                  </p>
+                  <p className="italic font-semibold mt-2 text-center">
                     Find out more about my counselling approaches{" "}
                     <Link
                       to="/MyApproach"
@@ -109,7 +112,7 @@ export default function HomePage() {
                   <b>deeper understanding</b> of yourself and move towards a
                   more <b>fulfilling life</b>.
                 </p>
-                <p className="italic  font-semibold">
+                <p className="italic text-center mt-2 font-semibold">
                   Have any other questions about my counselling services? Find
                   answers{" "}
                   <Link to="/FAQs" className="  hover:text-peach-brown ">
@@ -124,7 +127,7 @@ export default function HomePage() {
                   {" "}
                   Free Consultation
                 </h3>
-                <p >
+                <p>
                   As part of this process, I offer a{" "}
                   <b>free 20-minute consultation</b> to ensure that we are a
                   good fit and to discuss your <b>goals</b> in a way that feels{" "}
@@ -132,7 +135,7 @@ export default function HomePage() {
                   allows us to explore how counselling can meet your needs and
                   what you hope to gain from the experience.
                 </p>
-                <p className="font-semibold italic">
+                <p className="font-semibold mt-2 text-center italic">
                   If you&apos;re interested in working with me, contact me{" "}
                   <Link
                     to="/Contact"

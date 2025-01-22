@@ -49,6 +49,11 @@ export default {
           xl: { min: "1280px" },
         },
       },
+      height: {
+        50: "50vh",
+        60: '60vh',
+        80: "80vh",
+      },
     },
   },
   plugins: [],

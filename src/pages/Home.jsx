@@ -19,7 +19,7 @@ export default function HomePage() {
             alt="Image of light shining through trees in a forest"
           />
           <div className=" md:m-auto  absolute flex flex-col inset-0 text-center w-2/3 h-1/4 mx-auto  my-48 ">
-            <h2 className="text-center font-semibold text-dark-green md:text-main font-Playfair  text-4xl md:text-5xl md:m-auto">
+            <h2 className="text-center font-medium text-dark-green md:text-main font-Playfair  italic text-4xl md:text-5xl md:m-auto">
               “I do my best because I’m counting on you counting on me.” <br />-
               Maya Angelou{" "}
             </h2>
@@ -27,7 +27,7 @@ export default function HomePage() {
         </div>
         <div className="mainTextContainer  w-full mt-4 p-4  text-dark-green md:m-auto ">
           <div className=" w-full  h-2/3 mt-20 text-dark-green ">
-            <div className="aboutSection bg-peach-brown bg-opacity-30 rounded-md  md:w-2/3 m-auto pb-6">
+            <div className="aboutSection bg-sage bg-opacity-30 rounded-md  md:w-2/3 m-auto pb-6">
               <h2 className="text-4xl  font-Taviraj m-auto pt-4 text-center mb-4">
                 About me and my counselling practice
               </h2>
@@ -52,49 +52,46 @@ export default function HomePage() {
                   <b>inclusive and responsive</b> to your
                   <b> unique individual needs</b>, creating a space where you
                   feel <b>respected, understood</b> and <b>heard</b>.
-                </p>
-              </div>
-            </div>
-            <div className="textLinkSection  lg:w-2/3 m-auto md:border-peach-brown">
-              <div className="approachSection p-2  ">
-                <p className="m-auto pt-4">
-                  I am a member of the{" "}
+                  <br /> I am a member of the{" "}
                   <b>
                     British Association for Counselling and Psychotherapy (BACP)
                   </b>
                   , as such I adhere to their Ethical Framework. I offer both{" "}
                   <b>long </b>
                   &amp; <b>short-term</b> therapy. As I <b>work remotely</b> I
-                  can provide counselling <b>globally</b>. <br />
-                  <p className="text-center">
-                    I specialise in:
-                    <ul className="list-none ">
-                      <li>Anxiety</li>
-                      <li>Depression</li>
-                      <li>Stress</li>
-                      <li>Trauma</li>
-                      <li>Low Self Esteem</li>
-                      <li>Couples Counselling</li>
-                      <li>Relationship Issues</li>
-                      <li>Family Conflict</li>
-                      <li>Early Years Parenting</li>
-                      <li>Bereavement</li>
-                    </ul>
-                  </p>
-                  <p className="italic font-semibold mt-2 text-center">
-                    Find out more about my counselling approaches{" "}
-                    <Link
-                      to="/MyApproach"
-                      className="italic underline hover:text-peach-brown font-semibold"
-                    >
-                      here
-                    </Link>
-                  </p>
+                  can provide counselling <b>globally</b>.
                 </p>
               </div>
-              <div className="bg-peach-brown bg-opacity-40 hidden md:block "></div>
+            </div>
+            <div className="textSection md:w-2/3 m-auto ">
+              <div className="approachSection p-2 mt-6 bg-sage bg-opacity-30 rounded-md ">
+                <h3 className="text-3xl mt-6  font-Taviraj">
+                  I specialise in:
+                </h3>
+                <ul className="list-none font-normal">
+                  <li>Anxiety</li>
+                  <li>Depression</li>
+                  <li>Stress</li>
+                  <li>Trauma</li>
+                  <li>Low Self Esteem</li>
+                  <li>Couples Counselling</li>
+                  <li>Relationship Issues</li>
+                  <li>Family Conflict</li>
+                  <li>Early Years Parenting</li>
+                  <li>Bereavement</li>
+                </ul>
+                <p className="italic font-semibold mt-2 text-center">
+                  Find out more about my counselling approaches{" "}
+                  <Link
+                    to="/MyApproach"
+                    className="italic underline hover:text-peach-brown font-semibold"
+                  >
+                    here
+                  </Link>
+                </p>
+              </div>
 
-              <div className="faqSection">
+              <div className="faqSection  mt-6 p-2 bg-sage bg-opacity-30 rounded-md ">
                 <h3 className="text-3xl mt-6  font-Taviraj ">
                   Why Counselling?
                 </h3>
@@ -120,9 +117,8 @@ export default function HomePage() {
                   </Link>
                 </p>
               </div>
-              <div className="bg-peach-brown bg-opacity-40 hidden md:block"></div>
 
-              <div className="contactSection m-auto">
+              <div className="contactSection m-auto  p-2 mt-6 bg-sage bg-opacity-30 rounded-md ">
                 <h3 className="text-3xl mt-6 font-Taviraj md:mt-4">
                   {" "}
                   Free Consultation

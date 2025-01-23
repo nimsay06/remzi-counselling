@@ -50,18 +50,3 @@ export default function Footer() {
   );
 }
 
-{
-  /* <footer className="bg-dark-green m-auto  text-peach-brown bottom-0 w-full  grid grid-cols-3 grid-flow-row text-wrap border-3 border-main ">
-  <p className="font-Cormorant font-extrabold text-xl ml-2 border-3 border-main">
-    Deon Remzi Counselling{" "}
-  </p>
-  <img
-    src={logo}
-    className="m-auto p-0 h-10 w-12 inline border-3 border-main"
-  />
-  <p className="font-Cormorant font-extrabold text-sm h-fit w-fit text-pretty border-3 border-main ">
-    DeonRemzi@hotmail.com <br />
-    07470 356685
-  </p>
-</footer>; */
-}

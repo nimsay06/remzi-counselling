@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 export default function FAQ() {
   return (
     <>
-      <div className="min-h-screen text-center overflow-auto p-6 text-dark-green m-8 md:m-auto xl:text-lg md:w-2/3">
+      <div className="min-h-screen text-center overflow-auto p-6 text-dark-green m-auto xl:text-lg w-11/12 md:w-2/3">
         <div className="bg-peach-brown bg-opacity-20 p-2 mb-4 rounded-md">
           <h1 className="font-Taviraj font-medium text-3xl xl:text-4xl md:mt-8 ">
             Who do I work with?
@@ -38,6 +38,7 @@ export default function FAQ() {
               <li>Anxiety</li>
               <li>Bereavement</li>
               <li>Depression</li>
+              <li>Domestic Abuse</li>
               <li>Family Breakdown</li>
               <li>Family Issues</li>
               <li>General Anxiety Disorder</li>
@@ -45,7 +46,6 @@ export default function FAQ() {
               <li>Relationship Issues</li>
               <li>Sexual Abuse</li>
               <li>Stress</li>
-              <li>Domestic Abuse</li>
               <li>Trauma</li>
             </ul>
           </p>
@@ -56,8 +56,12 @@ export default function FAQ() {
           </h1>
           <p className="mb-5">
             <ul className="list-none ">
-              <li>Individual one-to-one 50-minute sessions: £65.00</li>
-              <li>Couples Counselling 60-minute sessions £95.00</li>
+              <li>
+                Individual one-to-one 50-minute sessions: <i>£65.00</i>
+              </li>
+              <li>
+                Couples Counselling 60-minute sessions: <i>£95.00</i>
+              </li>
             </ul>
           </p>
         </div>

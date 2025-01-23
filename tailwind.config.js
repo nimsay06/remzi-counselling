@@ -6,7 +6,6 @@ export default {
     colors: {
       "dark-green": "#194D52",
       "light-green": "#A9D9B6",
-      caramel: "#C77B48",
       "peach-brown": "#E5AB87",
       khaki: "#B49C86",
       parchment: "#EDE9CC",
@@ -36,10 +35,7 @@ export default {
       circle: "circle",
     },
     extend: {
-      backgroundImage: {
-        "hero-image": "url('/src/assets/sun_shining_through_trees.avif')",
-        humanisticImage: "url('/src/assets/Couch.jpg')",
-      },
+   
       screens: {
         screens: {
           xs: { min: "10px", max: "320px" },

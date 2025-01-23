@@ -18,7 +18,7 @@ export default function ContactPage() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Your Form Has Been Sent To Deon!");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -94,12 +94,12 @@ export default function ContactPage() {
             <br />
             <button
               type="submit"
-              className="rounded-xl text-2xl w-fit p-2 m-auto bg-light-green bg-opacity-60  hover:text-main "
+              className="rounded-3xl text-2xl w-fit py-2 px-4 m-auto bg-light-green bg-opacity-60  hover:text-main "
             >
               Send
             </button>
           </form>
-          <span>{result}</span>
+          <p className="text-center font-bold text-lg mt-4">{result}</p>
         </div>
       </div>
     </>

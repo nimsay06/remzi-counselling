@@ -43,7 +43,7 @@ export default function Testimonials() {
           {clientQuotes1.map((quote, index) => (
             <p
               key={index}
-              className=" border-2 p-4 mb-0 mt-4 text-lg rounded-lg h-fit bg-peach-brown bg-opacity-20 "
+              className=" border-2 p-4 mb-0 mt-4 text-lg rounded-lg h-fit bg-sage bg-opacity-20 "
             >
               &quot;
               {quote}
@@ -55,7 +55,7 @@ export default function Testimonials() {
           {clientQuotes2.map((quote, index) => (
             <p
               key={index}
-              className="border-2 p-4 text-lg mb-0 mt-4 rounded-lg bg-peach-brown bg-opacity-20 "
+              className="border-2 p-4 text-lg mb-0 mt-4 rounded-lg bg-sage bg-opacity-20 "
             >
               &quot;
               {quote}
@@ -67,7 +67,7 @@ export default function Testimonials() {
           {clientQuotes3.map((quote, index) => (
             <p
               key={index}
-              className="border-2 p-4 mt-4 text-lg rounded-lg bg-peach-brown bg-opacity-20 "
+              className="border-2 p-4 mt-4 text-lg rounded-lg bg-sage bg-opacity-20 "
             >
               &quot;
               {quote}

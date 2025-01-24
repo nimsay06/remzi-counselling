@@ -18,7 +18,7 @@ export default function ContactPage() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Your Form Has Been Sent To Deon!");
+      setResult("Your Form Has Been Sent To Deon");
       event.target.reset();
     } else {
       console.log("Error", data);

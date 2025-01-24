@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import HeroImage from "../assets/treeMain.jpg";
-import bacpReg from "../assets/BACP.png";
-import BAANTReg from "../assets/BAANT-Member-logo.jpg";
+import bacpReg from "../assets/BACP_Logo.png";
+import BAANTReg from "../assets/BAANT-Member-logo.png";
 import MHFAReg from "../assets/Mental_Health_First_Aider_badge_colour.png";
 import profileImg from "../assets/Deon_Remzi_pfp.jpg";
 
@@ -132,7 +132,7 @@ export default function HomePage() {
                   what you hope to gain from the experience.
                 </p>
                 <p className="font-semibold mt-2 text-center italic">
-                  If you&apos;re interested in working with me, contact me{" "}
+                  If you are interested in a free consultation, contact me{" "}
                   <Link
                     to="/Contact"
                     className="italic underline font-semibold hover:text-peach-brown"

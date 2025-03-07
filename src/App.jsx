@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import ContactPage from "./pages/Contact";
 import MyApproach from "./pages/About";
 import HomePage from "./pages/Home";
@@ -7,10 +8,19 @@ import FAQ from "./pages/FAQ";
 import Testimonials from "./pages/Testimonials";
 import ScrollTop from "./ScrollTop";
 import Footer from "./Footer";
+import { sendPageView } from "./analytics/googleanalytics";
+const AnalyticsTracker = () => {
+  const location = useLocation();
+  useEffect(() => {
+    sendPageView(location.pathname);
+  }, [location]);
+  return null;
+};
 function App() {
   return (
     <>
       <ScrollTop />
+      <AnalyticsTracker />
       <div className=" mx-auto  min-h-screen flex-1 overflow-x-hidden">
         <Navigation />
         <main>
